@@ -104,6 +104,65 @@ nav li:last-child{
 }
 
 /*Campus section*/
+.campus{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.campus .container{
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.camp-img{
+  width: 60%;
+  display: flex;
+  margin: 2rem 1.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.camp-img img{
+  width: 98%;
+  height: auto;
+}
+
+.side-bar-right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.event-card{
+  display: flex;
+  flex-direction: row;
+}
+
+.event-card-img{
+  margin: 1rem;
+  width: 35%;
+  height: auto;
+}
+
+.event-card-img img{
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+}
+
+.event-card-content{
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 /*Courses Section*/
 
