@@ -19,20 +19,24 @@ html{
   line-height: 1.2;
 }
 
-p{
+a{
 
+}
+
+p{
+  font-size: 1rem;
 }
 
 h1{
-
+  font-size: 1.75rem;
 }
 
 h2{
-
+  font-size: 2.5rem;
 }
 
 h3{
-
+  font-size: 2rem;
 }
 
 h4{
@@ -42,8 +46,62 @@ h4{
 /*Specifics for the content of the site*/
 
 /*Header section*/
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .logo img{
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+nav li{
+  display: inline-block;
+  padding: 1rem 0.5rem;
+}
+nav li:last-child{
+  margin-right: 1rem;
+}
 
 /*Jumbotron*/
+.jumbotron{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.j-img{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.j-img img{
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.j-content{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 /*Campus section*/
 
