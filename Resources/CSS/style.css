@@ -185,16 +185,16 @@ nav li:last-child{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 2rem 4.5rem;
+  margin: 1rem 3.5rem;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .course-card{
   display: flex;
-  flex-direction: column;
   width: 30%;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .course-card-img img{
@@ -203,5 +203,33 @@ nav li:last-child{
 }
 
 /*Thesis Exisbits Section*/
+.thesis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thesis .container{
+  display: flex;
+  align-items: flex-start;
+
+}
+.thesis-vid{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+}
+.thesis-vid video{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.thesis-content{
+  display: flex;
+  flex-direction: column;
+}
 
 /*Footer section*/
