@@ -165,6 +165,42 @@ nav li:last-child{
 }
 
 /*Courses Section*/
+.courses{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courses .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.banner{
+  padding: 2rem 0 0 0;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 4.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.course-card{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.course-card-img img{
+  width: 100%;
+  height: auto;
+}
 
 /*Thesis Exisbits Section*/
 
