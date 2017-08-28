@@ -1,5 +1,5 @@
 /*Borders for design*/
-a,
+/*a,
 li,
 p,
 h1,
@@ -17,26 +17,33 @@ div {
 html{
   font-size: 16px;
   line-height: 1.2;
+  font-family: 'Proza Libre';
 }
 
 a{
-
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 p{
   font-size: 1rem;
+  font-weight: 400;
+  color: #565454;
 }
 
 h1{
   font-size: 1.75rem;
+  font-weight: 700;
 }
 
 h2{
   font-size: 2.5rem;
+  font-weight: 600;
 }
 
 h3{
   font-size: 2rem;
+  font-weight: 400;
 }
 
 h4{
@@ -71,12 +78,34 @@ nav li:last-child{
   margin-right: 1rem;
 }
 
+.colmar{
+
+}
+.academy{
+  font-weight: 400;
+  color: #565454;
+}
+
+.header nav a{
+  color: #565454;
+  text-decoration: none;
+  border: 2px white solid;
+  border-radius: 3px;
+}
+
+.header nav a:hover{
+  border: 2px #565454 solid;
+  border-radius: 3px;
+  transition: 350ms ease-in 100ms;
+}
+
 /*Jumbotron*/
 .jumbotron{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #eaeaea;
 }
 
 .container{
@@ -93,16 +122,40 @@ nav li:last-child{
 }
 .j-img img{
   width: 100%;
-  height: 100%;  
-  margin: 2rem 1.5rem;
+  height: 100%;
+  margin: 2rem 0.75rem 2rem 1.5rem;
 }
 
 .j-content{
   width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
+}
+
+.j-content h3, h2, .btn{
+  margin-left: 1.75rem;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+  background-color: #0a7ecc;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: #14a1ff;
+  transition: 200ms linear 100ms;
+}
+
+.j-content h3{
+  margin-top: 2rem;
 }
 
 /*Campus section*/
@@ -111,6 +164,7 @@ nav li:last-child{
   width: 100%;
   align-items: center;
   justify-content: center;
+  background-color: #8fbfe0;
 }
 .campus .container{
   width: 80%;
@@ -133,6 +187,19 @@ nav li:last-child{
   height: auto;
 }
 
+.camp-img h2{
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+.camp-img p{
+  margin-top: 1.5rem;
+}
+
+.quote{
+  margin-top: 2rem;
+}
+
 .side-bar-right{
   width: 40%;
   display: flex;
@@ -144,6 +211,12 @@ nav li:last-child{
 .event-card{
   display: flex;
   flex-direction: row;
+  border: 2px #eaeaea solid;
+  border-radius: 4px;
+}
+
+.campus .side-bar-right .event-card:last-child{
+  background-color: #eaeaea;
 }
 
 .event-card-img{
@@ -166,11 +239,16 @@ nav li:last-child{
   justify-content: center;
 }
 
+.event-card-content h2, p, a{
+  padding: 0.25rem 0;
+}
+
 /*Courses Section*/
 .courses{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #eaeaea;
 }
 .courses .container{
   display: flex;
@@ -183,6 +261,11 @@ nav li:last-child{
   padding: 2rem 0 0 0;
 }
 
+.banner h2{
+  padding: 0;
+  margin: 0;
+}
+
 .grid{
   display: flex;
   flex-direction: row;
@@ -190,13 +273,28 @@ nav li:last-child{
   margin: 1rem 3.5rem;
   align-items: flex-start;
   justify-content: space-around;
+  align-items: stretch;
 }
 
 .course-card{
   display: flex;
   width: 30%;
   flex-direction: column;
-  padding: 1rem;
+  margin: 1rem;
+  align-items: stretch;
+  flex-grow: 2, 2, auto;
+  background-color: #8fbfe0;
+}
+
+.course-card h3{
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.course-card p{
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .course-card-img img{
@@ -210,23 +308,46 @@ nav li:last-child{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #8fbfe0;
+}
+
+.thesis .banner{
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .thesis .container{
   display: flex;
   align-items: flex-start;
-
 }
+
 .thesis-vid{
   display: flex;
   flex-direction: column;
   width: 60%;
   height: auto;
+  margin: 0 1.5rem 2rem 1.5rem;
 }
 .thesis-vid video{
   overflow: hidden;
   height: 100%;
   width: 100%;
+}
+
+.thesis-vid h3{
+  padding-top: 1.5rem;
+}
+
+.thesis-vid p{
+  margin-top: 0.5rem;
+}
+
+.thesis-content .event-card h3, p{
+  margin-top: 0.5rem;
+}
+
+.thesis .side-bar-right .event-card:first-child{
+  background-color: #eaeaea;
 }
 
 .thesis-content{
@@ -238,15 +359,27 @@ nav li:last-child{
 .footer{
   width: 100%;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-
+  background-color: #eaeaea;
 }
 
 .left-foot{
-  margin: 1rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 1.5rem 2.5rem 1.5rem;
+}
+
+.left-foot p{
+  padding: 0;
+  margin: 0;
 }
 
 .right-foot{
-  margin: 1rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 1.5rem 2.5rem 1.5rem;
 }
+
+.right-foot a{
+  display: inline-block;
+  padding: 0 0.5rem 0.5rem 0.5rem;
