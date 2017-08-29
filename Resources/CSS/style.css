@@ -50,6 +50,11 @@ h4{
 
 }
 
+@media only screen and (max-width: 460px) {
+  html{
+    font-size: 12px;
+  }
+}
 /*Specifics for the content of the site*/
 
 /*Header section*/
@@ -78,9 +83,6 @@ nav li:last-child{
   margin-right: 1rem;
 }
 
-.colmar{
-
-}
 .academy{
   font-weight: 400;
   color: #565454;
@@ -97,6 +99,34 @@ nav li:last-child{
   border: 2px #565454 solid;
   border-radius: 3px;
   transition: 350ms ease-in 100ms;
+}
+
+@media only screen and (min-width: 461px){
+  .h-mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .header .logo{
+    display: none;
+  }
+  .header nav, li, a{
+    display: none;
+  }
+  .header{
+    height: 5.25rem;
+  }
+  .h-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+  .h-mobile img{
+    display: visible;
+  }
 }
 
 /*Jumbotron*/
@@ -158,13 +188,44 @@ nav li:last-child{
   margin-top: 2rem;
 }
 
+@media only screen and (min-width: 461px){
+
+}
+
+@media only screen and (max-width: 460px){
+  .jumbotron .container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .j-img{
+    width: 100%;
+  }
+
+  .j-img img{
+    margin: 0;
+  }
+
+  .j-content{
+    width: 100%;
+    margin: 1.33rem;
+  }
+
+  .j-content h2, h3{
+    margin: 1.33rem;
+  }
+  .j-content .btn{
+    margin: 0.67rem 1.33rem 2.66rem 1.33rem;
+    padding: 1rem 0;
+  }
+}
+
 /*Campus section*/
 .campus{
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: #8fbfe0;
+  background-color: #cce8fc;
 }
 .campus .container{
   width: 80%;
@@ -243,6 +304,55 @@ nav li:last-child{
   padding: 0.25rem 0;
 }
 
+@media only screen and (min-width: 461px){
+  .mobile-img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .side-bar-right{
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 1.33rem;
+  }
+  .camp-img{
+    display: none;
+  }
+  .event-card{
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .event-card-content{
+    width: 100%;
+    height: auto;
+  }
+  .event-card-content p{
+    margin-left: 1.33rem;
+  }
+  .event-card-content a{
+    display: inline-block;
+    margin: 0.66rem 0 2.66rem 1.33rem;
+  }
+  .event-card-img{
+    display: none;
+  }
+  .mobile-img{
+    display: visible;
+  }
+  .mobile-img img{
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*Courses Section*/
 .courses{
   display: flex;
@@ -255,6 +365,7 @@ nav li:last-child{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 90%;
 }
 
 .banner{
@@ -283,7 +394,7 @@ nav li:last-child{
   margin: 1rem;
   align-items: stretch;
   flex-grow: 2, 2, auto;
-  background-color: #8fbfe0;
+  background-color: #cce8fc;
 }
 
 .course-card h3{
@@ -302,13 +413,38 @@ nav li:last-child{
   height: auto;
 }
 
+@media only screen and (min-width: 461px){
+ .mobile-grid{
+   display: none;
+ }
+}
+
+@media only screen and (max-width: 460px){
+  .grid{
+    display: none;
+  }
+  .mobile-grid{
+    width: 100%;
+  }
+  .courses .container{
+    width: 100%;
+  }
+  .mobile-grid h3{
+    padding: 1.33rem;
+    margin-right: 0.33rem 1rem 0.33rem 0;
+    background-color: #cce8fc;
+    border: 1px #cce8fc solid;
+    border-radius: 3px;
+  }
+}
+
 /*Thesis Exisbits Section*/
 .thesis{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #8fbfe0;
+  background-color: #cce8fc;
 }
 
 .thesis .banner{
@@ -355,6 +491,26 @@ nav li:last-child{
   flex-direction: column;
 }
 
+@media only screen and (min-width: 461px){
+.thesis-mobile{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 460px){
+.thesis .container{
+  display: none;
+}
+.thesis-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+}
+
 /*Footer section*/
 .footer{
   width: 100%;
@@ -383,3 +539,17 @@ nav li:last-child{
 .right-foot a{
   display: inline-block;
   padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+@media only screen and (min-width: 461px){
+
+}
+
+@media only screen and (max-width: 460px){
+  .left-foot{
+    margin: 1.33rem;
+  }
+  .right-foot{
+    display: none;
+  }
+}
